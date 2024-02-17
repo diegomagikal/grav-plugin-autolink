@@ -1,0 +1,5 @@
+pt:
+  exampleoftext: blog/example
+
+enabled: true
+substitute_all: false

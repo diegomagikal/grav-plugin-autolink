@@ -1,0 +1,51 @@
+name: AutoLink
+slug: autoLink
+type: plugin
+version: 1.0.0
+description: "Automatically creates links for categories, tags, and specified words."
+icon: link
+author:
+  name: Diego Luiz
+  email: diego@magikal.com.br
+license: MIT
+
+form:
+  fields:
+    substitute_all:
+      type: toggle
+      label: Link all word occurrences
+      highlight: 1
+      default: 0
+      options:
+        1: 'Yes'
+        0: 'No'
+      validate:
+        type: bool
+    enable_categories:
+      type: toggle
+      label: Parse Categories
+      highlight: 1
+      default: 0
+      options:
+        1: 'Yes'
+        0: 'No'
+      validate:
+        type: bool
+    category_link_format:
+      type: text
+      label: Categories link format
+      default: '/category/{category}'
+    enable_tags:
+      type: toggle
+      label: Parse Tags
+      highlight: 1
+      default: 0
+      options:
+        1: 'Yes'
+        0: 'No'
+      validate:
+        type: bool
+    tag_link_format:
+      type: text
+      label: Tags link format
+      default: '/tag/{tag}'
